@@ -1,0 +1,2 @@
+sudo mount -t drvsf D: /mnt/d        ## This mounts a USB disk drive in D: drive area.
+sudo umount /mnt/d                   ## This unmounts a USB drive.
