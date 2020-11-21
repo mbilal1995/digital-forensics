@@ -1,0 +1,9 @@
+*** FIRST YOU NEED TO CREATE A .dd/001 FILE USING ACCESS DATA FTK IMAGER IN ORDER TO USE THE FOLLOWING COMMANDS ***
+
+md5sum <image>                      ## This gives me the md5 hash value
+sha1sum <image>                     ## This gives me the sha1 hash value
+img_stat <image>                    ## Check the image type.
+mmls <image>                        ## Look at the partitioning information/partition offset numbers.
+fsstat -o <offset number> <image>   ## Shows you the file system information for the partition.
+fls -o <offset number> <image>      ## Shows us the informtion about directories and files inside the partition.
+fls -r -o <offset number> <image>   ## Gives us a recursive list of all files/folders for the entire disk. **VERY USEFUL**
